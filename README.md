@@ -8,6 +8,8 @@ say GOOD-BYE to UnicodeEncodeError: 'ascii' codec can't encode character in posi
   - Before:
 ```python
 print 'café'.decode('utf-8') # any text cause you an UnicodeEncodeError
+```
+```
 >>> UnicodeEncodeError: 'ascii' codec can't encode character u'\xe9' in position 3: ordinal not in range(128)
 ```
 
