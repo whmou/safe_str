@@ -6,20 +6,22 @@ say GOOD-BYE to UnicodeEncodeError: 'ascii' codec can't encode character in posi
 
 # Demo
   - Before:
-```
+```python
 print 'café'.decode('utf-8') # any text cause you an UnicodeEncodeError
+```
+```
 >>> UnicodeEncodeError: 'ascii' codec can't encode character u'\xe9' in position 3: ordinal not in range(128)
 ```
 
  - After:
-```
+```python
 print safe_str('café'.decode('utf-8'))
 >>> café
 ```
 
 # Usage
 copy this snippet to your code:
-```
+```python
 import sys
 
 def safe_str(text):
