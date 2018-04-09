@@ -19,7 +19,7 @@ print safe_str('café'.decode('utf-8'))
 
 # Usage
 copy this snippet to your code:
-```
+```python
 import sys
 
 def safe_str(text):
